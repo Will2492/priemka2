@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Прием телефонов в ремонт</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Прием устройства в ремонт</h1>
+        <form id="orderForm">
+            <label for="name">ФИО клиента:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="phone">Телефон клиента:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="brand">Марка телефона:</label>
+            <input type="text" id="brand" name="brand" required>
+
+            <label for="model">Модель телефона:</label>
+            <input type="text" id="model" name="model" required>
+
+            <label for="problem">Описание неисправности:</label>
+            <textarea id="problem" name="problem" required></textarea>
+
+            <label for="price">Оценочная стоимость ремонта:</label>
+            <input type="number" id="price" name="price">
+
+            <button type="submit">Принять в ремонт</button>
+        </form>
+
+        <div id="message" style="margin-top: 20px;"></div>
+
+        <div id="ordersList">
+            <h2>Список заявок:</h2>
+            <ul id="orders"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
